@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Calculator</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo-img" src="/logo.png" alt="">
+        <div class="forms-container">
+
+            <div class="form-container">
+        <h2 class="header-text"> Shipping Calculator</h2>
+
+                <div class="input-group">
+                    <label for="type">Type:</label>
+                    <select id="type">
+                        <option value="Express">Express</option>
+                        <option value="Cargo">Cargo</option>
+                        <option value="Sea">Sea</option>
+                        <option value="Land">Land</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label class="label-weight" for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter weight">
+                </div>
+                <div class="input-group">
+                    <label for="length">Length (cm):</label>
+                    <input type="number" id="length" placeholder="Enter length">
+                </div>
+                <div class="input-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="Enter height">
+                </div>
+                <div class="input-group">
+                    <label for="width">Width (cm):</label>
+                    <input type="number" id="width" placeholder="Enter width">
+                </div>
+                <div class="input-group">
+                    <label for="destination">Destination:</label>
+                    <select id="destination">
+                    </select>
+                </div>
+                <button id="calculate-btn">Calculate Cost</button>
+                <div id="result" class="result"></div>
+            </div>
+
+
+            <!-- sec form -->
+            <div class="form-container">
+        <h2 class="header-text"> Custom and Clearance Calculator</h2>
+
+                <div class="input-group">
+                    <label for="HS-type">HS code:</label>
+                    <select id="HS-type">
+                        <option></option>
+                        <option value="852589">852589</option>
+                        <option value="730830">730830</option>
+                        <option value="853110">853110</option>
+                        <option value="847130">847130</option>
+                        <option value="851762">851762</option>
+                        <option value="854470">854470</option>
+                        <option value="853710">853710</option>
+                        <option value="844332">844332</option>
+                        <option value="901060">901060</option>
+                        <option value="850440">850440</option>
+                        <option value="852190">852190</option>
+                        <option value="852849">852849</option>
+                        <option value="851714">851714</option>
+                        <option value="854370">854370</option>
+                        <option value="847190">847190</option>
+                        <option value="853650">853650</option>
+                        <option value="830160">830160</option>
+                        <option value="853590">853590</option>
+                        <option value="830140">830140</option>
+                        <option value="853190">853190</option>
+                        <option value="850450">850450</option>
+                        <option value="851890">851890</option>
+                        <option value="851821">851821</option>
+                        <option value="851769">851769</option>
+                        <option value="851822">851822</option>
+                        <option value="847150">847150</option>
+                        <option value="853670">853670</option>
+                        <option value="851830">851830</option>
+                        <option value="851840">851840</option>
+                        <option value="851810">851810</option>
+                        <option value="853810">853810</option>
+                        <option value="392690">392690</option>
+                        <option value="841459">841459</option>
+                        <option value="852791">852791</option>
+                        <option value="852349">852349</option>
+                        <option value="851850">851850</option>
+                        <option value="902810">902810</option>
+                        <option value="902820">902820</option>
+                        <option value="902830">902830</option>
+                        <option value="854420">854420</option>
+                        <option value="851771">851771</option>
+                        <option value="940399">940399</option>
+                        <option value="845110">845110</option>
+                        <option value="852871">852871</option>
+                        <option value="732690">732690</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="hs-description">hs code description:</label>
+                    <p class="hs-description"></p>
+                </div>
+                <div class="input-group">
+                    <label for="tax-rate">Tax Rate % :</label>
+                    <p class="tax-rate"></p>
+                </div>
+                <div class="input-group">
+                    <label for="invoice">invoice value JOD:</label>
+                    <input type="number" id="invoice" placeholder="Enter invoice">
+                </div>
+
+                <button id="calculate-btn2">Calculate Cost</button>
+                <div id="HS-result" class="HS-result"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

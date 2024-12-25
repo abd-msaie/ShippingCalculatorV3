@@ -1,0 +1,134 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+
+.logo-img{
+    width: 280px;
+}
+.container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #df1e36; /* Dark Red */
+    font-size: 1.6rem; /* Smaller font size */
+    margin-bottom: 10px;
+}
+
+.form-container {
+    width: 45%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forms-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    margin-bottom: 12px; /* Reduced space between inputs */
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.9rem; /* Smaller font size */
+    color: #df1e36; /* Dark Red */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.label-weight{
+    color: black !important;
+}
+.hs-description
+{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    word-wrap:break-word
+}
+.tax-rate{
+    background-color: white;
+    width: 100%;
+    height: 28px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 6px; /* Further reduced padding */
+    font-size: 0.8rem; /* Smaller font size */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+
+.input-group select {
+    cursor: pointer;
+}
+
+button {
+    background-color: #df1e36; /* Dark Red */
+    color: #fff;
+    padding: 8px 15px; /* Reduced padding */
+    font-size: 0.9rem; /* Smaller font size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #df1e36; /* Slightly darker red */
+}
+
+.result ,.HS-result{
+    margin-top: 15px;
+    padding: 10px; /* Reduced padding */
+    background-color: #f9f9f9;
+    border: 2px solid #df1e36; /* Dark Red */
+    border-radius: 4px;
+    font-size: 1rem; /* Reduced font size */
+    color: #333;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.4rem; /* Slightly smaller font on small screens */
+    }
+
+    .input-group input,
+    .input-group select,
+    button {
+        font-size: 0.8rem; /* Even smaller font size for inputs and buttons */
+    }
+
+    .result , .HS-result {
+        font-size: 0.9rem; /* Smaller result font size */
+    }
+}
