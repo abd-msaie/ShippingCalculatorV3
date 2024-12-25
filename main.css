@@ -117,8 +117,11 @@ button:hover {
         width: 100%;
         padding: 5px;
     }
+        .form-container {
+        width: 49%;
+    }
 
-    h1 {
+    h2 {
         font-size: 1.4rem; /* Slightly smaller font on small screens */
     }
 
