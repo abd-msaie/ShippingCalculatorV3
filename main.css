@@ -117,12 +117,13 @@ button:hover {
         width: 100%;
         padding: 5px;
     }
-        .form-container {
+    
+    .form-container {
         width: 49%;
     }
 
     h2 {
-        font-size: 1.4rem; /* Slightly smaller font on small screens */
+        font-size: 1.2rem; /* Slightly smaller font on small screens */
     }
 
     .input-group input,
