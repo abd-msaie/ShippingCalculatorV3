@@ -145,7 +145,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
     // Cap weight to 500 if it exceeds that value
     if (finalWeight > 500) {
       finalWeight = 500;
-      resultMessage += " Weight exceeded 500kg, capping it to 500kg.";
+      resultMessage += " Weight exceeded 500kg, capping it to 500kg, to accurate cost connect with this email Logistics@optimizasolutions.com";
     }
 
     // Validate input fields
