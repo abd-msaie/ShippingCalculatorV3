@@ -108,7 +108,7 @@ button:hover {
     border: 2px solid #df1e36; /* Dark Red */
     border-radius: 4px;
     font-size: 1rem; /* Reduced font size */
-    color: #333;
+    color: #ff0000;
     font-weight: bold;
 }
 
