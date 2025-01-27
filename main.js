@@ -160,7 +160,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
       } else if (destination === "BELGIUM" || destination === "FRANCE" || destination === "GERMANY" ||
         destination === "ITALY" || destination === "NETHERLANDS" || destination === "SPAIN" ||
         destination === "UNITED KINGDOM") {
-        cost = 4.1883 * finalWeight + 26.266;
+        cost = 3.9074 * finalWeight + 122.75;
       } else if (destination === "CANADA" || destination === "CHINA" || destination === "HONGKONG" || destination === "USA") {
         cost = 4.5756 * finalWeight + 18.714;
       } else if (destination === "ALGIERS" || destination === "INDIA" || destination === "PORTUGAL" || destination === "TURKEY") {
@@ -197,7 +197,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
       } else if (destination === "BELGIUM" || destination === "FRANCE" || destination === "GERMANY" ||
         destination === "ITALY" || destination === "NETHERLANDS" || destination === "SPAIN" ||
         destination === "UNITED KINGDOM") {
-        cost = 4.1883 * finalWeight + 26.266;
+        cost = 3.9074 * finalWeight + 122.75;
       } else if (destination === "CANADA" || destination === "CHINA" || destination === "HONGKONG" || destination === "USA") {
         cost = 4.5756 * finalWeight + 18.714;
       } else if (destination === "ALGIERS" || destination === "INDIA" || destination === "PORTUGAL" || destination === "TURKEY") {
