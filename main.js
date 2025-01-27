@@ -156,7 +156,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
     // Calculate cost based on type and destination
     if (type === "Express") {
       if (destination === "OMAN" || destination === "UAE" || destination === "QATAR") {
-        cost = 2.8486 * finalWeight + 20.638;
+        cost = 4.2729 * finalWeight + 30.957;
       } else if (destination === "BELGIUM" || destination === "FRANCE" || destination === "GERMANY" ||
         destination === "ITALY" || destination === "NETHERLANDS" || destination === "SPAIN" ||
         destination === "UNITED KINGDOM") {
