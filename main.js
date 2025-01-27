@@ -193,7 +193,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
       }
     } else if (type === "Cargo") {
       if (destination === "OMAN" || destination === "UAE" || destination === "QATAR") {
-        cost = 2.8728 * finalWeight + 13.205;
+        cost = 4.2729 * finalWeight + 30.957;
       } else if (destination === "BELGIUM" || destination === "FRANCE" || destination === "GERMANY" ||
         destination === "ITALY" || destination === "NETHERLANDS" || destination === "SPAIN" ||
         destination === "UNITED KINGDOM") {
