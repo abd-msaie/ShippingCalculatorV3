@@ -455,10 +455,12 @@ calculateButton.addEventListener("click", function () {
   const taxRate = taxRates[selectedValue];
   const tax = invoiceValue * taxRate;
   const totalCost = invoiceValue + tax+ 250;
+  const Insurance  = invoiceValue * 0.007;
 
   // Display result
-  resultElement.innerHTML = "Total cost is: " + totalCost+" JOD" + "<br>" + description + "<br>"+" (need to be held at customs from 1-14 days for approvals)";
+  resultElement.innerHTML = "Total cost is: " + totalCost+" JOD" + "<br>" + "Cost of insurance :"+Insurance+"<br>"+ description + "<br>"+" (need to be held at customs from 1-14 days for approvals)";
 });
 totalCost.toFixed(2)
 // Initialize description on page load
 selectElement.dispatchEvent(new Event("change"));
+
