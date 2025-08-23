@@ -455,14 +455,15 @@ calculateButton.addEventListener("click", function () {
   const taxRate = taxRates[selectedValue];
   const tax = invoiceValue * taxRate;
   const totalCost = invoiceValue + tax+ 250;
-  const Insurance  = invoiceValue * 0.007;
+  const Insurance = (invoiceValue * 0.007 < 50) ? 50 : invoiceValue * 0.007;
 
   // Display result
-  resultElement.innerHTML = "Total cost is: " + totalCost+" JOD" + "<br>" + "If the shipment requires insurance, Cost is:"+Insurance+ "JOD" +"<br>"+ description + "<br>"+" (need to be held at customs from 1-14 days for approvals)";
+  resultElement.innerHTML = "Total cost is: " + totalCost+" JOD" + "<br>" + "Cost is:"+Insurance+ "JOD" +"<br>"+ description + "<br>"+" (need to be held at customs from 1-14 days for approvals)";
 });
 totalCost.toFixed(2)
 // Initialize description on page load
 selectElement.dispatchEvent(new Event("change"));
+
 
 
 
